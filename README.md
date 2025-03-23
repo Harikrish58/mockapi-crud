@@ -1,12 +1,34 @@
-# React + Vite
+# React CRUD App with MockAPI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This React application provides a full CRUD (Create, Read, Update, Delete) interface for managing user data fetched from a MockAPI endpoint. It features a responsive navbar, a home page with user cards, a detailed user directory with edit/delete options, pages for creating and editing users, and a footer, all powered by React Router and Axios.
 
-Currently, two official plugins are available:
+## Features
+- **Create**: Add new users via the `/create` page with a detailed form.
+- **Read**: 
+  - View a grid of user cards on the home page (`/`) with contact, address, and company details.
+  - Browse a detailed table of users on the `/users` page with edit/delete actions.
+- **Update**: Edit user details via dynamic routes (`/edit/:id`) with a pre-filled form.
+- **Delete**: Remove users from the `/users` page with immediate UI updates.
+- Responsive navbar with links to Home, Users, and Create pages.
+- Footer with dynamic copyright year on all pages.
+- Success messages on the `/users` page after create/update/delete operations (auto-dismiss after 3 seconds).
+- Loading and error states for all API interactions.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
+- **Frontend**: React (Hooks), React Router
+- **API**: MockAPI (RESTful mock API)
+- **HTTP Client**: Axios
+- **Styling**: Bootstrap (used across components for layout and UI)
+- **Deployment**: Netlify-compatible
 
-## Expanding the ESLint configuration
+## Prerequisites
+- Node.js (v16+ recommended)
+- npm (v8+)
+- MockAPI account and project
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Setup Instructions
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
